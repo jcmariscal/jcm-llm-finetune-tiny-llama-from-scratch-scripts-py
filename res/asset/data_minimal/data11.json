@@ -1,0 +1,78 @@
+[
+  {
+    "story": "\n\nLily and Ben are friends. They like to play in the park. One day, they see a big tree with a swing. Lily wants to try the swing. She runs to the tree and climbs on the swing.\n\"Push me, Ben!\" she says. Ben pushes her gently. Lily feels happy. She swings higher and higher. She laughs and shouts.\nBen watches Lily. He thinks she is cute. He wants to swing too. He waits for Lily to stop. But Lily does not stop. She swings faster and faster. She is having too much fun.\n\"Can I swing too, Lily?\" Ben asks. Lily does not hear him. She is too busy swinging. Ben feels sad. He walks away.\nLily swings so high that she loses her grip. She falls off the swing. She lands on the ground. She hurts her foot. She cries.\n\"Ow, ow, ow!\" she says. She looks for Ben. She wants him to help her. But Ben is not there. He is gone.\nLily feels sorry. She wishes she had shared the swing with Ben. She wishes he was there to hug her. She limps to the tree. She sees something hanging from a branch. It is Ben's hat. He left it for her.\nLily smiles. She thinks Ben is nice. She puts on his hat. She hopes he will come back. She wants to say sorry. She wants to be friends again.",
+    "instruction": {
+      "prompt:": "Write a short story (3-5 paragraphs) which only uses very simple words that a 3 year old child would understand. The story should use the verb \"hang\", the noun \"foot\" and the adjective \"cute\". The story has the following features: the story should contain at least one dialogue. Remember to only use simple words!\n\nPossible story:",
+      "words": [
+        "hang",
+        "foot",
+        "cute"
+      ],
+      "features": [
+        "Dialogue"
+      ]
+    },
+    "summary": "Lily and Ben play in the park and Lily gets too caught up in swinging, causing Ben to leave. Lily falls off the swing and hurts herself, but Ben leaves his hat for her as a kind gesture.",
+    "source": "GPT-4"
+  },
+  {
+    "story": "Once upon a time, there was a little girl named Lily. She had a teddy bear that she loved so much. One day, she lost it while playing in the park. She looked everywhere, but she couldn't find it. She felt sad and scared without her teddy bear. \nLily's mommy saw her crying and asked what was wrong. Lily told her that she lost her teddy bear. Mommy hugged her and said, \"Don't worry, we'll search for it together.\" They went back to the park and looked everywhere. After a while, they found the teddy bear under a tree. Lily was so happy! \nShe hugged her teddy bear and felt comfortable again. She said, \"I hope I never lose you again, teddy bear.\" Mommy smiled and said, \"Me too, Lily. You and teddy bear are the best of friends.\" And they all went home, happy and content. The end.",
+    "instruction": {
+      "prompt:": "Write a short story (3-5 paragraphs) which only uses very simple words that a 3 year old child would understand. In the story, try to at some point use the verb \"hope\", the noun \"search\" and the adjective \"comfortable\". Remember to only use simple words!",
+      "words": [
+        "hope",
+        "search",
+        "comfortable"
+      ],
+      "features": []
+    },
+    "summary": "Lily loses her teddy bear in the park and her mommy helps her find it, making Lily happy again.",
+    "source": "GPT-3.5"
+  },
+  {
+    "story": "Once upon a time, there was a little girl named Lily. She had an idea to make a big tower of blocks. She pulled all the blocks together and started building. She was very happy as the tower grew taller and taller.\nSuddenly, her little brother came and pulled one block from the tower. The tower fell down and Lily was very sad. She cried and cried because she worked so hard on her tower and now it was gone.\nLily learned that sometimes things don't go as planned and it can make you feel sad. But she also learned that she could always try again and build an even bigger tower next time.",
+    "instruction": {
+      "prompt:": "Write a short story (3-5 paragraphs) which only uses very simple words that a 3 year old child would understand. In the story, try to at some point use the verb \"pull\", the noun \"idea\" and the adjective \"sad\". The story has the following features: the story has a bad ending. Remember to only use simple words!",
+      "words": [
+        "pull",
+        "idea",
+        "sad"
+      ],
+      "features": [
+        "BadEnding"
+      ]
+    },
+    "summary": "Lily builds a tower of blocks but her little brother ruins it. She learns to try again and build an even bigger tower next time.",
+    "source": "GPT-3.5"
+  },
+  {
+    "story": "Once upon a time, there was a cute puppy named Max. Max was very adorable with his big, brown eyes and wagging tail. One day, Max's owner, Emily, told him that they needed to go to the post office to mail a letter. Max didn't know what that meant, but he was excited to go for a car ride.\nAt the post office, Emily gave the letter to the nice lady behind the desk. The lady asked Emily for a number and Emily gave her one. Max didn't know what a number was, but he saw the lady type something on the computer.\nAfter they mailed the letter, Emily and Max went back to the car. Max was happy that they went on an adventure and he couldn't wait for the next one.",
+    "instruction": {
+      "prompt:": "Write a short story (3-5 paragraphs) which only uses very simple words that a 3 year old child would understand. In the story, try to at some point use the verb \"mail\", the noun \"number\" and the adjective \"adorable\". Remember to only use simple words!",
+      "words": [
+        "mail",
+        "number",
+        "adorable"
+      ],
+      "features": []
+    },
+    "summary": "Max goes on a car ride with his owner to the post office and watches her mail a letter.",
+    "source": "GPT-3.5"
+  },
+  {
+    "story": "One day, a kind and honest cat named Tom found a pretty velvet ribbon. He wanted to hang it on his door. But when he tried to hang it, he saw his friend, a small bird named Sue, was sad.\nSue wanted the velvet ribbon too. Tom did not want to make Sue sad. So, he thought of a way to share the ribbon. He knew that they both liked to play games.\nTom said, \"Let's play a game. We can take turns to have the ribbon. Today, I will hang it on my door. Tomorrow, you can hang it on your tree.\"\nSue liked this idea. They played and shared the velvet ribbon every day. Tom and Sue were both happy. They learned that sharing is a good way to solve problems and stay friends.",
+    "instruction": {
+      "prompt:": "Write a short story (3-5 paragraphs) which only uses very simple words that a 3 year old child would understand. The story should use the verb \"hang\", the noun \"velvet\" and the adjective \"honest\". The story has the following features: the story has some form of conflict in it. Remember to only use simple words!",
+      "words": [
+        "hang",
+        "velvet",
+        "honest"
+      ],
+      "features": [
+        "Conflict"
+      ]
+    },
+    "summary": "Tom the cat finds a velvet ribbon and wants to hang it on his door, but his friend Sue the bird is sad because she wants it too. Tom comes up with a solution to share the ribbon by taking turns hanging it on their own doors/trees, and they both learn the value of sharing.",
+    "source": "GPT-4"
+  }
+]
