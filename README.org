@@ -4,18 +4,41 @@ Experimental minimal tinyllama training and finetuning on Tesla Nvidia P100
 
 * Full dataset
 
-https://huggingface.co/datasets/roneneldan/TinyStories
+Download TinyStories_all_data.tar.gz from: https://huggingface.co/datasets/roneneldan/TinyStories
 
 * Stories models
-
 https://huggingface.co/karpathy/tinyllamas/
+
+Download 15M model and put it in =./res/asset/models/karpathy/tinyllama/=
+
+* Training from scratch
+
+start with preparing dataset:
+
+(use full dataset for better results)
+
+#+begin_src bash
+./src-finetuning/prepare_instruct_dataset.py
+#+end_src
+
+Train from scratch using the generated data:
+
+#+begin_src bash
+./src-finetuning/instruct_training_from_scratch.py
+#+end_src
+
+Instruct lora finetune using 15M tinyllama model
+
+#+begin_src bash
+./src-finetuning/instruct_lora_finetune.py
+#+end_src
 
 * Inference
 
 Example use of inferencing script:
 
 #+BEGIN_SRC bash
-python generate.py --model_path='./models/lora_story_teller_110M.pt' --prompt='Write a story. In the story, try to use the verb "climb", the noun "ring" and the adjective "messy". Possible story:' --temperature=0.1 --top_k=10
+python src-finetuning/generate.py --model_path='./build/models/lora_story_teller_110M.pt' --prompt='Write a story. In the story, try to use the verb "climb", the noun "ring" and the adjective "messy". Possible story:' --temperature=0.1 --top_k=10
 #+END_SRC
 
 * Acknowledgements
