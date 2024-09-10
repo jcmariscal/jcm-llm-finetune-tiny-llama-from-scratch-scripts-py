@@ -1,0 +1,30 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: llm-finetune-tiny-llama-from-scratch
+Upstream-Contact: J.C. Mariscal-Melgar <d0g@duck.com>
+Source: tba
+
+Files:
+    res/asset/**
+Copyright: See individual Files
+License: See individual Files
+
+Files:
+    res/scripts/**
+Copyright:
+    J.C. Mariscal-Melgar <d0g@duck.com>
+License: Apache-2.0
+
+Files:
+    src/**
+    src-finetuning/**
+Copyright:
+    J.C. Mariscal-Melgar <d0g@duck.com>
+License: Apache-2.0
+
+Files:
+    requirements.txt
+    README.org
+    .gitattributes
+Copyright:
+    J.C. Mariscal-Melgar <d0g@duck.com>
+License: Apache-2.0

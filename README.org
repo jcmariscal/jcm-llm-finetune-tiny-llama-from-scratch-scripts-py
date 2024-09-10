@@ -1,0 +1,31 @@
+#+title: Tinyllama from scratch
+
+Experimental minimal tinyllama training and finetuning on Tesla Nvidia P100
+
+* Full dataset
+
+https://huggingface.co/datasets/roneneldan/TinyStories
+
+* Inference
+
+Example use of inferencing script:
+
+#+BEGIN_SRC bash
+python generate.py --model_path='./models/lora_story_teller_110M.pt' --prompt='Write a story. In the story, try to use the verb "climb", the noun "ring" and the adjective "messy". Possible story:' --temperature=0.1 --top_k=10
+#+END_SRC
+
+* Acknowledgements
+
+Based on:
+
+- https://github.com/cindysridykhan/instruct_storyteller_tinyllama2/
+
+- https://github.com/ruirui-zhang/instruct_storyteller_tinyllama2
+
+- https://github.com/karpathy/nanoGPT
+
+- https://github.com/karpathy/llama2.c
+
+* License
+
+Apache-2.0
