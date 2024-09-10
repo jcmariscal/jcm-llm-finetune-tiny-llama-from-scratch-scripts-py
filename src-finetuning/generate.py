@@ -3,12 +3,22 @@ sys.path.append('../src/')
 
 import os
 import torch
+import argparse
 from sentencepiece import SentencePieceProcessor
 from model import *
 import torch.nn.functional as F
 
+# Adding argparse for command-line arguments
+parser = argparse.ArgumentParser(description="Generate a story")
+
+parser.add_argument("--model_path", type=str, required=True, help="Path to the model file")
+parser.add_argument("--prompt", type=str, required=True, help="Prompt for generating the story")
+parser.add_argument("--temperature", type=float, default=0.5, help="Temperature for controlling randomness")
+parser.add_argument("--top_k", type=int, default=10, help="Number of top-k candidates to consider")
+
+args = parser.parse_args()
+
 tokenizer_path = '../tokenizer.model'
-checkpoint_path = '../models/lora_story_teller_110M.pt'
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 tokenizer = SentencePieceProcessor(model_file=tokenizer_path)
 
@@ -39,12 +49,12 @@ def load_model(checkpoint_path, device, unwanted_prefix='_orig_mod'):
     model.to(device)
     return model, checkpoint
 
+# Load the model with the path from argparse
 instruct_model, ckpt = load_model(
-    checkpoint_path=checkpoint_path,
+    checkpoint_path=args.model_path,
     device=device,
     unwanted_prefix='',
 )
-
 
 def generate_paragraph(
     model,
@@ -73,13 +83,14 @@ def generate_paragraph(
             break
     return context_tokens, paragraph, tokenizer.decode(paragraph)
 
-prompt = 'Write a story. In the story, try to use the verb "climb", the noun "ring" and the adjective "messy". Possible story:'
-
+# Use the prompt, temperature, and top_k from argparse
 _, tokens, paragraph = generate_paragraph(
     model=instruct_model,
-    prompt=prompt,
+    prompt=args.prompt,
     max_new_tokens=400,
-    temperature=0.5,
-    top_k=10
+    temperature=args.temperature,
+    top_k=args.top_k
 )
+
+# Print the generated story
 print(paragraph)
