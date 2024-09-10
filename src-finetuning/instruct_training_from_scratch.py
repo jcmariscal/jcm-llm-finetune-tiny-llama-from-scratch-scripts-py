@@ -23,7 +23,7 @@ device_type = 'cuda'
 
 # paths
 DATA_CACHE_DIR = '../res/asset/instruct_dataset_minimal/'
-out_dir = '../models/'
+out_dir = '../build/models/'
 os.makedirs(out_dir, exist_ok=True)
 
 # tokenizer

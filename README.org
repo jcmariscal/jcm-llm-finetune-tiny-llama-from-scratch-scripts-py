@@ -6,6 +6,10 @@ Experimental minimal tinyllama training and finetuning on Tesla Nvidia P100
 
 https://huggingface.co/datasets/roneneldan/TinyStories
 
+* Stories models
+
+https://huggingface.co/karpathy/tinyllamas/
+
 * Inference
 
 Example use of inferencing script:

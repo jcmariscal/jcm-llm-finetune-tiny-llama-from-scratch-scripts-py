@@ -9,6 +9,7 @@ from sentencepiece import SentencePieceProcessor
 from functools import partial
 
 data = '../res/asset/data_minimal/'
+# data = '../res/asset/data/'
 tokenizer_path = '../res/asset/tokenizer.model'
 out_data = '../res/asset/instruct_dataset_minimal/'
 os.makedirs(out_data, exist_ok=True)

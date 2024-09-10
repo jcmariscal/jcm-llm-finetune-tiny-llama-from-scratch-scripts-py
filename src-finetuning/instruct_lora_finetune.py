@@ -19,10 +19,11 @@ device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
 device_type = 'cuda' if 'cuda' in device else 'cpu'
 
 DATA_CACHE_DIR = '../instruct_dataset_minimal/'
-out_dir = '../models/'
+out_dir = '../build/models/'
 os.makedirs(out_dir, exist_ok=True)
-pretrained_model_path = '../models/stories15M.pt'
-tokenizer = SentencePieceProcessor('../tokenizer.model')
+# https://huggingface.co/karpathy/tinyllamas/tree/main
+pretrained_model_path = '../res/asset/models/karpathy/tinyllamas/stories15M.pt'
+tokenizer = SentencePieceProcessor('../res/asset/tokenizer.model')
 vocab_size = tokenizer.vocab_size()
 
 
